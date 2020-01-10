@@ -1,0 +1,16 @@
+.grid {
+    display: -ms-grid;
+    display: grid
+}
+
+.grid__elem {
+    background: wheat;
+    height: 50px;
+    border: 1px solid black
+}
+
+.grid__elem:last-child {
+    margin-bottom: 0
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+.grid{
+  display: grid;
+  
+  &__elem {
+    background: wheat;
+    height: 50px;
+    border: 1px solid black;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
