@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -ms-grid-columns: (25%)[4];
+  grid-template-columns: repeat(4, 25%);
+}
+
+.item {
+  padding: 20px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style3.css.map */

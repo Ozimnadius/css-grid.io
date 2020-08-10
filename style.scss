@@ -1,14 +1,44 @@
-.grid{
-  display: grid;
-  
-  &__elem {
-    background: wheat;
-    height: 50px;
-    border: 1px solid black;
-
-    &:last-child{
-      margin-bottom: 0;
-    }
-  }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: [l-sidebar-s] repeat(3, 1fr) [l-sidebar-e] repeat(6, 1fr) [r-sidebar-s] repeat(3, 1fr) [r-sidebar-e];
+  grid-template-rows: [header-s] auto [header-e] 1fr [footer-s] auto [footer-e];
+  grid-gap: 20px 10px;
+
+  grid-template-areas: "header header header header header header header header header header header header" "left left left content content content content content content right right right" "footer footer footer footer footer footer footer footer footer footer footer footer ";
+
+}
+
+.item {
+  padding: 20px 0;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+
+  &-1 {
+    grid-area: header;
+  }
+
+  &-2 {
+    grid-area: left;
+  }
+
+  &-3 {
+    grid-area: content;
+  }
+
+  &-4 {
+    grid-area: right;
+  }
+
+  &-5 {
+    grid-area: footer;
+  }
+
+}

@@ -1,16 +1,2 @@
-.grid {
-    display: -ms-grid;
-    display: grid
-}
-
-.grid__elem {
-    background: wheat;
-    height: 50px;
-    border: 1px solid black
-}
-
-.grid__elem:last-child {
-    margin-bottom: 0
-}
-
+body,html{height:100%;margin:0;padding:0}.container{display:-ms-grid;display:grid;height:100%;-ms-grid-columns:[l-sidebar-s] 10px 1fr 10px 1fr 10px 1fr 10px [l-sidebar-e] 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px [r-sidebar-s] 10px 1fr 10px 1fr 10px 1fr 10px [r-sidebar-e];grid-template-columns:[l-sidebar-s] repeat(3, 1fr) [l-sidebar-e] repeat(6, 1fr) [r-sidebar-s] repeat(3, 1fr) [r-sidebar-e];-ms-grid-rows:[header-s] 20px auto 20px [header-e] 20px 1fr 20px [footer-s] 20px auto 20px [footer-e];grid-template-rows:[header-s] auto [header-e] 1fr [footer-s] auto [footer-e];grid-gap:20px 10px;grid-template-areas:"header header header header header header header header header header header header" "left left left content content content content content content right right right" "footer footer footer footer footer footer footer footer footer footer footer footer "}.item{padding:20px 0;color:white;font-weight:600;text-align:center}.item-1{-ms-grid-row:1;-ms-grid-column:1;-ms-grid-column-span:23;grid-area:header}.item-2{-ms-grid-row:3;-ms-grid-column:1;-ms-grid-column-span:5;grid-area:left}.item-3{-ms-grid-row:3;-ms-grid-column:7;-ms-grid-column-span:11;grid-area:content}.item-4{-ms-grid-row:3;-ms-grid-column:19;-ms-grid-column-span:5;grid-area:right}.item-5{-ms-grid-row:5;-ms-grid-column:1;-ms-grid-column-span:23;grid-area:footer}
 /*# sourceMappingURL=style.css.map */
